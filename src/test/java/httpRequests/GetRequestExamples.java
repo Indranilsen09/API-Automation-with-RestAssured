@@ -15,9 +15,7 @@ public class GetRequestExamples
     	//------------------------------------------------------------------------
     	//Getting Multiple Users
     	//-------------------------------------------------------------------------
-    	
-    	
-    	
+	    
         //Setting up the Base URI
         baseURI = "https://reqres.in/";
 
@@ -37,7 +35,7 @@ public class GetRequestExamples
     	//Getting Single User : End-point is Changed --> /api/users/2
     	//-------------------------------------------------------------------------
     	
-    	  //Setting up the Base URI
+    	//Setting up the Base URI
         baseURI = "https://reqres.in/";
 
                 given().
@@ -58,11 +56,11 @@ public class GetRequestExamples
    @Test
    public static void getNotAnUser() 
    {
-	 //------------------------------------------------------------------------
+	//------------------------------------------------------------------------
    	//Getting Not an User : End-point is Changed --> /api/users/23
    	//-------------------------------------------------------------------------
    	
-   	  //Setting up the Base URI
+       //Setting up the Base URI
        baseURI = "https://reqres.in/";
 
                given().
@@ -77,9 +75,9 @@ public class GetRequestExamples
    @Test
    public static void getListOfUsers() 
    {
-	   	//------------------------------------------------------------------------
-	   	//Getting List of Users : End-point is Changed --> --> /api/unknown/
-	   	//-------------------------------------------------------------------------
+	//------------------------------------------------------------------------
+	//Getting List of Users : End-point is Changed --> --> /api/unknown/
+	//-------------------------------------------------------------------------
 	   
 	   baseURI = "https://reqres.in/";
 	   
@@ -103,20 +101,21 @@ public class GetRequestExamples
    public static void getDelayedResponse() 
    {
 
-	   	//------------------------------------------------------------------------
-	   	//Getting Delayed Response of 3000ms : End-point is Changed --> --> api/users?delay=3
-	   	//-------------------------------------------------------------------------
+	//------------------------------------------------------------------------
+	//Getting Delayed Response of 3000ms : End-point is Changed --> --> api/users?delay=3
+	//-------------------------------------------------------------------------
 	   
 	   baseURI = "https://reqres.in/";
 	   
 	   given().
-	   		get("api/users?delay=3").
+	   	get("api/users?delay=3").
 	   then().
-	   		statusCode(200).
+	   	statusCode(200).
 	   and().
-	   		assertThat().time(lessThan(4500L)).// Verifying Response time should be lesser than 4500MilliSeconds
+	   	assertThat().
+		time(lessThan(4500L)).// Verifying Response time should be lesser than 4500MilliSeconds
 	   and().
-	   		log().all();
+	   	log().all();
 	   
 	   //_______________________________________________________________________________
 	   //This GET Request only passes when Response Time is Below 4500 Milliseconds
