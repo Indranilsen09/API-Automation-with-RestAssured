@@ -1,0 +1,23 @@
+INDEX VERSION 1.134+D:\Projects2024\API-Testing-Playground\API-Automation-with-RestAssured\.metadata\.plugins\org.eclipse.jdt.core
+908117329.index
+4179948304.index
+2379455704.index
+852152936.index
+3526903431.index
+3684725000.index
+3413270776.index
+919356555.index
+165671664.index
+1060349579.index
+1865797976.index
+1176940181.index
+228617988.index
+1562995644.index
+3047293139.index
+3225178168.index
+1043561273.index
+313920473.index
+3473123053.index
+835265093.index
+1794120031.index
+898797391.index

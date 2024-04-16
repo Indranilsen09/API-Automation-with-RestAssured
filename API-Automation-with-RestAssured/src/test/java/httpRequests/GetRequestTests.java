@@ -1,0 +1,23 @@
+package httpRequests;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+
+public class GetRequestTests 
+{
+	@Test
+	public static void validateBasicGetRequest() 
+	{
+		RestAssured.baseURI = "https://reqres.in/";
+		
+		Response response = RestAssured.get("/api/users?page=2");
+		
+		System.out.println("Status Code: " + response.getStatusCode());
+		System.out.println("Status Line: " + response.getStatusLine());
+		System.out.println("Content Type: " + response.contentType());
+		System.out.println("Response Body: " + response.asPrettyString());
+		System.out.println("Session Id: " + response.getSessionId());
+	}
+
+}
