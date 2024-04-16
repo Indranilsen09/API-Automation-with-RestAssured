@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpRequests.PostRequestExamples">
+      <class name="httpRequests.PutRequestExamples">
         <methods>
-          <include name="unsuccessfulRegister"/>
+          <include name="put"/>
         </methods>
-      </class> <!-- httpRequests.PostRequestExamples -->
+      </class> <!-- httpRequests.PutRequestExamples -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
