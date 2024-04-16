@@ -46,6 +46,8 @@ public class PostRequestExamples
 		
 	}
 	
+	//This is Second Type of Creating an JSONObject / Request Payload without Map/HashMap
+	
 	@Test
 	public static void testPOST() 
 	{
@@ -59,16 +61,131 @@ public class PostRequestExamples
 		req.put("job", "SDET");
 		
 		given().
-			header("Connection","keep-alive").
+			header("Connection","keep-alive"). //Testing Out Header Config
 			contentType(ContentType.JSON). //Giving Out header(Content-Type:application/JSON) 
 			accept(ContentType.JSON). //Accepting header(Content-Type:application/JSON) 
 			body(req.toJSONString()).
 		when().
 			post("/api/users").
 		then().
-			statusCode(201).assertThat().body("id", matchesRegex("\\d+")).
+			statusCode(201).assertThat().body("id", matchesRegex("\\d+")). //One more type: InstanceOf(Long.class)
 		and().
 			log().all();
 	}
-
+	
+	
+	@Test
+	public static void postRegister() 
+	{
+		//-----------------------------------------------------------------------------------
+		// Registering an User with Email password and getting an output with id and token
+		//-----------------------------------------------------------------------------------
+		
+		baseURI= "https://reqres.in/";
+		
+		JSONObject request = new JSONObject();
+		request.put("email","eve.holt@reqres.in");
+		request.put("password", "pistol");
+		
+		given().
+			contentType(ContentType.JSON).
+			accept(ContentType.JSON).
+			body(request.toJSONString()).
+		when().
+			post("/api/register").
+		then().
+			assertThat().
+			statusCode(200).
+		and().
+			body("id", equalTo(4)).
+			body("token",matchesRegex("[a-zA-Z0-9]+")).
+			log().all();
+	}
+	
+	
+	//Negative Test Case
+	@Test
+	public static void unsuccessfulRegister() 
+	{
+		//-----------------------------------------------------------------------------------
+		// Registering an User with Email & without password and getting an error : Missing Password
+		//-----------------------------------------------------------------------------------
+		
+		baseURI= "https://reqres.in/";
+		
+		JSONObject request = new JSONObject();
+		request.put("email","eve.holt@reqres.in");
+		
+		
+		given().
+			contentType(ContentType.JSON).
+			accept(ContentType.JSON).
+			body(request.toJSONString()).
+		when().
+			post("/api/register").
+		then().
+			assertThat().
+			statusCode(400).
+		and().
+			body("error",equalTo("Missing password")).
+			log().all();
+	}
+	
+	@Test
+	public static void login() 
+	{
+		//-----------------------------------------------------------------------------------------
+		// Login an User with Email & password and getting Token Output 
+		//--------------------------------------------------------------------------------------
+				
+		
+		baseURI= "https://reqres.in/";
+		
+		JSONObject request = new JSONObject();
+		request.put("email","eve.holt@reqres.in");
+		request.put("password","cityslicka");
+		
+		
+		given().
+			contentType(ContentType.JSON).
+			accept(ContentType.JSON).
+			body(request.toJSONString()).
+		when().
+			post("/api/login").
+		then().
+			assertThat().
+			statusCode(200).
+		and().
+			body("token",matchesRegex("[a-zA-Z0-9]+")).
+			log().all();
+	}
+	
+	@Test
+	public static void invalidLogin() 
+	{
+		//-----------------------------------------------------------------------------------
+		// Login an User with Email & without password and getting an error : Missing Password
+		//-----------------------------------------------------------------------------------
+				
+		
+		baseURI= "https://reqres.in/";
+		
+		JSONObject request = new JSONObject();
+		request.put("email","eve.holt@reqres.in");
+		//request.put("password","cityslicka");
+		
+		
+		given().
+			contentType(ContentType.JSON).
+			accept(ContentType.JSON).
+			body(request.toJSONString()).
+		when().
+			post("/api/login").
+		then().
+			assertThat().
+			statusCode(200).
+		and().
+			body("error",equalTo("Missing password")).
+			log().all();
+	}
 }

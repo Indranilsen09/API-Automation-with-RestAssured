@@ -5,7 +5,7 @@
     <classes>
       <class name="httpRequests.PostRequestExamples">
         <methods>
-          <include name="testPost"/>
+          <include name="unsuccessfulRegister"/>
         </methods>
       </class> <!-- httpRequests.PostRequestExamples -->
     </classes>
