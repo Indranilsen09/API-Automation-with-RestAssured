@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpRequests.PutRequestExamples">
+      <class name="httpRequests.JSONSchemaValidation">
         <methods>
-          <include name="put"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- httpRequests.PutRequestExamples -->
+      </class> <!-- httpRequests.JSONSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
