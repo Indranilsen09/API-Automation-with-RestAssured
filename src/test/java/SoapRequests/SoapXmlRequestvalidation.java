@@ -1,14 +1,15 @@
 package SoapRequests;
-import static io.restassured.RestAssured.*;
-
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.commons.io.IOUtils;
 import org.testng.annotations.Test;
-
 import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+
+import static org.hamcrest.Matchers.*;
 
 public class SoapXmlRequestvalidation 
 {
@@ -35,9 +36,10 @@ public class SoapXmlRequestvalidation
 			post("calculator.asmx").
 		then().
 			statusCode(200).
-		and().
-			log().all();
-	
+			assertThat().body("//*:AddResult.text()", equalTo("5")).
+		and().log().all();
+		
+		
 		
 	}
 

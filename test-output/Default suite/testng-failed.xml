@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="httpRequests.JSONSchemaValidation">
+      <class name="SoapRequests.SoapXmlRequestvalidation">
         <methods>
-          <include name="testGet"/>
+          <include name="validateSoapXML"/>
         </methods>
-      </class> <!-- httpRequests.JSONSchemaValidation -->
+      </class> <!-- SoapRequests.SoapXmlRequestvalidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

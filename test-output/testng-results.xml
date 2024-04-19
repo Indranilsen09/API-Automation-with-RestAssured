@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-19T13:24:25 IST" name="Default suite" finished-at="2024-04-19T13:24:27 IST" duration-ms="2075">
+  <suite started-at="2024-04-19T14:51:21 IST" name="Default suite" finished-at="2024-04-19T14:51:24 IST" duration-ms="2603">
     <groups>
     </groups>
-    <test started-at="2024-04-19T13:24:25 IST" name="Default test" finished-at="2024-04-19T13:24:27 IST" duration-ms="2075">
-      <class name="httpRequests.SoapXmlRequestvalidation">
-        <test-method signature="validateSoapXML()[pri:0, instance:httpRequests.SoapXmlRequestvalidation@59309333]" started-at="2024-04-19T13:24:25 IST" name="validateSoapXML" finished-at="2024-04-19T13:24:27 IST" duration-ms="2040" status="PASS">
+    <test started-at="2024-04-19T14:51:21 IST" name="Default test" finished-at="2024-04-19T14:51:24 IST" duration-ms="2603">
+      <class name="SoapRequests.SoapMultiplyRequest">
+        <test-method signature="validateMultiplication()[pri:0, instance:SoapRequests.SoapMultiplyRequest@59309333]" started-at="2024-04-19T14:51:21 IST" name="validateMultiplication" finished-at="2024-04-19T14:51:24 IST" duration-ms="2557" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateSoapXML -->
-      </class> <!-- httpRequests.SoapXmlRequestvalidation -->
+        </test-method> <!-- validateMultiplication -->
+      </class> <!-- SoapRequests.SoapMultiplyRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

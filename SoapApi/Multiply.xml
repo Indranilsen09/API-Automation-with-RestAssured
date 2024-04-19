@@ -2,8 +2,8 @@
 <soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
     <Multiply xmlns="http://tempuri.org/">
-      <intA>12</intA>
-      <intB>24</intB>
+      <intA>2</intA>
+      <intB>4</intB>
     </Multiply>
   </soap:Body>
 </soap:Envelope>
