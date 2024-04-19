@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-18T21:48:58 IST" name="Default suite" finished-at="2024-04-18T21:49:01 IST" duration-ms="2421">
+  <suite started-at="2024-04-19T13:24:25 IST" name="Default suite" finished-at="2024-04-19T13:24:27 IST" duration-ms="2075">
     <groups>
     </groups>
-    <test started-at="2024-04-18T21:48:58 IST" name="Default test" finished-at="2024-04-18T21:49:01 IST" duration-ms="2421">
-      <class name="httpRequests.JSONSchemaValidation">
-        <test-method signature="testGet()[pri:0, instance:httpRequests.JSONSchemaValidation@5b239d7d]" started-at="2024-04-18T21:48:58 IST" name="testGet" finished-at="2024-04-18T21:49:01 IST" duration-ms="2388" status="PASS">
+    <test started-at="2024-04-19T13:24:25 IST" name="Default test" finished-at="2024-04-19T13:24:27 IST" duration-ms="2075">
+      <class name="httpRequests.SoapXmlRequestvalidation">
+        <test-method signature="validateSoapXML()[pri:0, instance:httpRequests.SoapXmlRequestvalidation@59309333]" started-at="2024-04-19T13:24:25 IST" name="validateSoapXML" finished-at="2024-04-19T13:24:27 IST" duration-ms="2040" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testGet -->
-      </class> <!-- httpRequests.JSONSchemaValidation -->
+        </test-method> <!-- validateSoapXML -->
+      </class> <!-- httpRequests.SoapXmlRequestvalidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
