@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--486303210\testng-customsuite.xml</span>
+                    <span>C:\Users\ASUS\AppData\Local\Temp\testng-eclipse-1239139837\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,21 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="SoapRequests.SoapXMLSchemaValidation" class="method navigator-link" hash-for-method="xmlSchemaValidation">xmlSchemaValidation</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="DataDrivenTesting.DataProviderTest" class="method navigator-link" hash-for-method="testPost(AyushMan, Developer)">testPost(AyushMan, Developer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="DataDrivenTesting.DataProviderTest" class="method navigator-link" hash-for-method="testPost(Indranil Sen, SDET)">testPost(Indranil Sen, SDET)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,106 +123,34 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">SoapRequests.SoapXMLSchemaValidation</span>
+              <img src="passed.png"/>
+              <span class="class-name">DataDrivenTesting.DataProviderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="xmlSchemaValidation">
-                  </a> <!-- xmlSchemaValidation -->
-                  <span class="method-name">xmlSchemaValidation</span>
-                  <div class="stack-trace">org.xml.sax.SAXParseException; systemId: http://schemas.xmlsoap.org/soap/envelope/; lineNumber: 1; columnNumber: 1; Premature end of file.
-	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204)
-	at java.xml/com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:178)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1465)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1013)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:605)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:114)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:542)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:640)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:696)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2227)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.resolveSchema(XSDHandler.java:2129)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.constructTrees(XSDHandler.java:1050)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:653)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:618)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:577)
-	at java.xml/com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadGrammar(XMLSchemaLoader.java:543)
-	at java.xml/com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory.newSchema(XMLSchemaFactory.java:281)
-	at java.xml/javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612)
-	at javax.xml.validation.SchemaFactory$newSchema$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
-	at io.restassured.internal.matcher.xml.XmlXsdMatcher.matches(XmlXsdMatcher.groovy:82)
-	at io.restassured.internal.assertion.BodyMatcher.validate(BodyMatcher.java:82)
-	at io.restassured.internal.assertion.BodyMatcherGroup.lambda$validate$0(BodyMatcherGroup.java:30)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
-	at io.restassured.internal.assertion.BodyMatcherGroup.validate(BodyMatcherGroup.java:30)
-	at io.restassured.internal.assertion.BodyMatcherGroup$validate$3.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
-	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
-	at SoapRequests.SoapXMLSchemaValidation.xmlSchemaValidation(SoapXMLSchemaValidation.java:33)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
-</div> <!-- stack-trace -->
+                  <a name="testPost(AyushMan, Developer)">
+                  </a> <!-- testPost(AyushMan, Developer) -->
+                  <span class="method-name">testPost</span>
+                  <span class="parameters">(AyushMan,Developer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPost(Indranil Sen, SDET)">
+                  </a> <!-- testPost(Indranil Sen, SDET) -->
+                  <span class="method-name">testPost</span>
+                  <span class="parameters">(Indranil Sen,SDET)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ASUS\AppData\Local\Temp\testng-eclipse--486303210\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ASUS\AppData\Local\Temp\testng-eclipse-1239139837\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -226,7 +159,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;SoapRequests.SoapXMLSchemaValidation&quot;/&gt;
+      &lt;class name=&quot;DataDrivenTesting.DataProviderTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testPost&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- DataDrivenTesting.DataProviderTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -266,16 +203,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'xmlSchemaValidation')
-data.setCell(0, 2, 'SoapRequests.SoapXMLSchemaValidation')
-data.setCell(0, 3, 3143);
+data.setCell(0, 1, 'testPost')
+data.setCell(0, 2, 'DataDrivenTesting.DataProviderTest')
+data.setCell(0, 3, 3579);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testPost')
+data.setCell(1, 2, 'DataDrivenTesting.DataProviderTest')
+data.setCell(1, 3, 706);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -301,12 +242,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">SoapRequests.SoapXMLSchemaValidation</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">DataDrivenTesting.DataProviderTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">xmlSchemaValidation</span>
+                <span class="method-name">testPost(Indranil Sen, SDET)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPost(AyushMan, Developer)</span>
+                <span class="method-start">3585 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
