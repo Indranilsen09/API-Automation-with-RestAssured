@@ -5,10 +5,10 @@ Author - Indranil Sen
 
 Technical Stack: 
   - Rest Assured Library of JAVA
-  - TestNG         : for Test Execution & Reporting
-  - Hamcrest       : for Matching Response payloads
-  - JSON Simple    : for creating Request payloads
-  - Apache Commons : for importing schema documents
+  - **TestNG**         : for Test Execution & Reporting (@Test, @Before, @After Annotations)
+  - **Hamcrest**       : for Matching Response payloads
+  - **JSON Simple**    : for creating Request payloads
+  - **Apache Commons** : for importing schema documents
 
 In order to get the Project Working Structure [Project Board](https://miro.com/welcomeonboard/ZDVrcFdQRUpnb1BCWWtCOHhXRkxzdnBISnRTdjBta0diNjlGc2RlSzF5ZzJ2cW14Y1oyc1VpY01xQkpYSFpLV3wzNDU4NzY0NTg2OTI0Njg5NjMwfDI=?share_link_id=334578387971)
 
